@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Mulish&display=swap');
+
+.jumbotron {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #eaeaea;
+    background-position:center center;
+    height: 100vh;
+    z-index: 1;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron::after{
+    content:''; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: -1;
+    background: rgba(56, 56, 56, 0.534);
+}
+
+.display-4 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.lead {
+    font-family: 'Mulish', sans-serif;
+}
+
+span.line-right{
+    width: 40px;
+    height: 2px;
+    border-image: none;
+    margin: 5px 10px;
+    background-color: rgba(0, 81, 255, 0.7);
+    display: inline-block;
+}
+
+span.line-left{
+    width: 40px;
+    height: 2px;
+    border-image: none;
+    margin: 5px 10px;
+    background-color: rgba(0, 81, 255, 0.7);
+    display: inline-block;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Mulish', sans-serif;
+}
+
+.card::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(85, 85, 85, 0.562);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card img.img-top{
+    width: 100%;
+    height: 35rem;
+}
+
+.card-img {
+    height: 16rem;
+}
+
+.footer-btn {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.footer-btn button{
+    width: 6rem;
+}
+
+.footer-btn-center {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.footer-btn-center button{
+    width: 6rem;
+}
+
+.news_latter {
+    font-family: 'Mulish', sans-serif;
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/news_latter.jpg);
+}
+
+.overlay {
+    font-family: 'Mulish', sans-serif;
+    color: #eaeaea;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay::before {
+    content:''; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 58, 58, 0.534);
+}
+
+.newsletter_field input {
+    font-family: 'Mulish', sans-serif;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    font-family: rubik,sans-serif;
+    font-weight: 300;
+}
+
+.newsletter_btn .boxed-btn4 {
+    font-family: 'Mulish', sans-serif;
+    background: #ff4a52;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 39px;
+    font-family: rubik,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.all-destination {
+    font-family: 'Mulish', sans-serif;
+}
+
+footer {
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    color: #eaeaea;
+    background-color: rgba(55, 0, 255, 0.979);
+}
+
+footer .text-footer {
+    padding: 20px 0 5px 0;
+    text-align: center;
+    
+}
+
+footer .text-footer p{
+    padding: 0;
+}
+
+.img-tengah {
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .panorama {
+        width: 359px;
+    }
+    .img-tengah {
+        margin-top: 0;
+    }
+}
